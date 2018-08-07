@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style list="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <!--<item list="colorPrimary">@color/colorPrimary</item>-->
+    <!--<item list="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+    <!--<item list="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--custom dialog style-->
+    <style name="dialogStyle" parent="ThemeOverlay.AppCompat.Dialog">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="full_screen_dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <!--custom dialog style-->
+    <style name="mapStyle" parent="ThemeOverlay.AppCompat.Dialog">
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!--custom dialog style-->
+    <style name="DatePickerDialogTheme" parent="@style/ThemeOverlay.AppCompat.Dialog">
+        <item name="android:color">@color/colorAccent</item>
+        <!--  <item list="android:background">@color/colorAccent</item>-->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="animationdialog">
+        <item name="android:windowEnterAnimation">@anim/dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out</item>
+    </style>
+
+    <style name="slideUpDown">
+        <item name="android:windowEnterAnimation">@anim/slid_up</item>
+        <item name="android:windowExitAnimation">@anim/slid_down</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorSecondary">@color/Black</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorSecondary">@color/Black</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+    </style>
+
+
+    <style name="buttonStyle" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/drw_button_shape_two</item>
+    </style>
+
+    <!--login and register edit text style-->
+    <style name="editTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorHint">@color/colorHint</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+
+    </style>
+
+    <style name="btnhelp" parent="AppTheme">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:background">@drawable/drw_border_button</item>
+    </style>
+
+    <style name="btnposthelp" parent="AppTheme">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:background">@drawable/drw_rounded_corner_gardident_coloraccent</item>
+    </style>
+
+    <style name="menutextappearance" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#a5a7a9</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">"@fonts/WorkSans-Light.otf"</item>
+    </style>
+
+    <style name="dashboard_as_helper" parent="AppTheme">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/drw_drawable_help_as_helper</item>
+    </style>
+
+    <style name="MyCustomTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="TabWidgetTheme" parent="AppTheme">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColorPrimary">@color/colorAccent</item>
+        <item name="android:textColorSecondary">@color/colorTextGray</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- Custome dialog Header Style, e.g Fogot Password, Country, City, Location dialog -->
+    <style name="txtCustomDialogHeaderStyle" parent="AppTheme">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+
+    <style name="ReviewRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/drw_review_rating</item>
+        <item name="android:minHeight">30dp</item>
+        <item name="android:maxHeight">75dp</item>
+    </style>
+
+    <style name="SpinnerTheme" parent="Base.Widget.AppCompat.Spinner">
+
+        <item name="android:dropDownSelector">@drawable/img_arrow_selectbox</item>
+    </style>
+
+
+    <!--  for transparency
+    100% — FF
+     95% — F2
+     90% — E6
+     85% — D9
+     80% — CC
+     75% — BF
+     70% — B3
+     65% — A6
+     60% — 99
+     55% — 8C
+     50% — 80
+     45% — 73
+     40% — 66
+     35% — 59
+     30% — 4D
+     25% — 40
+     20% — 33
+     15% — 26
+     10% — 1A
+     5% — 0D
+     0% — 00
+     -->
+
+</resources>

@@ -1,0 +1,580 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_help_bannerPic"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="centerCrop" />
+
+                <ProgressBar
+                    android:id="@+id/prg_banner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_below="@+id/img_help_bannerPic"
+                    android:background="@color/colorAccent" />
+
+                <ImageView
+                    android:id="@+id/img_profilePhoto"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="65dp"
+                    android:background="@drawable/drw_circle_white"
+                    android:onClick="onClick"
+                    android:scaleType="fitXY" />
+
+                <ProgressBar
+                    android:id="@+id/prg_profile"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_profileInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/str_profile_info"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_FristName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/edt_firstName"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/first_name"
+                        android:inputType="text"
+                        android:maxLength="20"
+                        android:maxLines="1" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_LastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edt_lastName"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/last_name"
+                        android:inputType="text"
+                        android:maxLength="20"
+                        android:maxLines="1" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edt_email"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/str_email"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="50"
+                        android:maxLines="1" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_addressLine1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edt_addressLine1"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/str_address_line1"
+                        android:inputType="text"
+                        android:lines="3"
+                        android:maxLength="150"
+                        android:maxLines="3" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_addressLine2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edt_addressLine2"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/str_address_line2"
+                        android:inputType="text"
+                        android:lines="3"
+                        android:maxLength="150"
+                        android:maxLines="3" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <!-- <android.support.design.widget.TextInputLayout
+                     android:id="@+id/input_layout_Password"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+
+                     <EditText
+                         android:id="@+id/edt_password"
+                         style="@style/editTextStyle"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:hint="Password"
+                         android:inputType="textPassword"
+                         android:maxLength="20"
+                         android:maxLines="1" />
+                 </android.support.design.widget.TextInputLayout>-->
+
+                <TextView
+                    android:id="@+id/tv_personalInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/str_personal_info"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_Telephone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/edt_telephone"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/telephone"
+                        android:inputType="phone"
+                        android:lines="1"
+                        android:maxLength="20"
+                        android:maxLines="1" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp">
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/sp_gender"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:spinnerMode="dialog" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_arrow_selectbox" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorHint" />-->
+
+                <TextView
+                    android:id="@+id/tv_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawableEnd="@drawable/img_arrow_selectbox"
+                    android:drawableRight="@drawable/img_arrow_selectbox"
+                    android:gravity="center_vertical"
+                    android:hint="@string/select_gender"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:onClick="onClick"
+                    android:padding="5dp"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorHint" />
+
+                <TextView
+                    android:id="@+id/edt_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:drawableEnd="@drawable/img_arrow_selectbox"
+                    android:drawableRight="@drawable/img_arrow_selectbox"
+                    android:gravity="center_vertical"
+                    android:hint="@string/country"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:onClick="onClick"
+                    android:padding="5dp"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorHint" />
+
+                <TextView
+                    android:id="@+id/edt_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:drawableRight="@drawable/img_arrow_selectbox"
+                    android:gravity="center_vertical"
+                    android:hint="@string/state"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:onClick="onClick"
+                    android:padding="5dp"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorHint" />
+
+                <TextView
+                    android:id="@+id/edt_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:drawableEnd="@drawable/img_arrow_selectbox"
+                    android:drawableRight="@drawable/img_arrow_selectbox"
+                    android:gravity="center_vertical"
+                    android:hint="@string/city"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:onClick="onClick"
+                    android:padding="5dp"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorHint" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_PosatlCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <EditText
+                        android:id="@+id/edt_postalCode"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/postal_code"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLength="20"
+                        android:maxLines="1" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_birthDate"
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:hint="@string/str_birth_date"
+                    android:inputType="date"
+                    android:lines="1"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:onClick="onClick"
+                    android:padding="5dp"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorHint" />
+
+                <TextView
+                    android:id="@+id/tv_busionInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/str_busion_info"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_payment_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:drawableEnd="@drawable/img_arrow_selectbox"
+                    android:drawableRight="@drawable/img_arrow_selectbox"
+                    android:gravity="center_vertical"
+                    android:hint="@string/select_payment_type"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:onClick="onClick"
+                    android:padding="5dp"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="12sp" />
+
+                <!--<android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/sp_payment_method"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:spinnerMode="dialog" />-->
+
+                <!--  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:src="@drawable/img_arrow_selectbox" />-->
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorHint" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_bankaccount_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/edt_bankaccount_number"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_personalNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/edt_personal_number"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/str_personal_number"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:visibility="gone" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_businessTaxId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/edt_businessTextId"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/str_business_tex_id"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:visibility="gone" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/myImageViewText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv_file_upload"
+                    android:layout_margin="1dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Legal Document Upload Here"
+                    android:textColor="#000000" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:id="@+id/img_file_upload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/img_legal_document_upload"
+                        android:onClick="onClick"
+                        android:padding="5dp"
+                        android:scaleType="centerCrop" />
+
+                    <ProgressBar
+                        android:id="@+id/prg_LegaleDocument"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="visible" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/chk_termsConditions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_termsAndConditions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <!--<android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_l ayout_accountCurrency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <EditText
+                        android:id="@+id/edt_acount_currency"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/str_currency"
+                        android:inputType="number"
+                        android:maxLength="15"
+                        android:maxLines="1" />
+                </android.support.design.widget.TextInputLayout>-->
+
+                <!-- <android.support.design.widget.TextInputLayout
+                     android:id="@+id/input_layout_RoutingNumber"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="5dp">
+
+                     <EditText
+                         android:id="@+id/edt_Routing_number"
+                         style="@style/editTextStyle"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:hint="@string/str_Routing_number"
+                         android:inputType="number"
+                         android:lines="1"
+                         android:maxLength="15"
+                         android:maxLines="1" />
+                 </android.support.design.widget.TextInputLayout>-->
+
+                <Button
+                    android:id="@+id/btn_update"
+                    style="@style/buttonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:onClick="onClick"
+                    android:text="@string/update" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/adViewH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <com.google.android.gms.ads.AdView
+                    android:id="@+id/profile_adView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:adSize="SMART_BANNER"
+                    app:adUnitId="@string/ad_banner_id" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_dialogHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|start"
+        android:text="@string/provide_a_group_subject"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_groupPhoto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/img_create_account" />
+
+        <EditText
+            android:id="@+id/edt_groupName"
+            style="@style/editTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:maxLines="1"
+            android:hint="@string/type_group_subject_here"
+            android:inputType="text"
+            android:maxLength="100"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:gravity="end"
+         android:orientation="horizontal"
+         android:paddingBottom="5dp"
+         android:paddingTop="5dp">-->
+
+    <!--<Button
+        android:id="@+id/btn_actionCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:background="@drawable/drw_button_shape"
+        android:text="Cancel"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />-->
+
+    <Button
+        android:id="@+id/btn_createGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/drw_button_shape"
+        android:onClick="onClick"
+        android:text="@string/ok"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+    <!-- </LinearLayout>
+ -->
+</LinearLayout>

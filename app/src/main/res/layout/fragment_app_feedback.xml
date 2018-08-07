@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/header" />
+
+    <TextView
+        android:id="@+id/lbl_FeddBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/share_your_feedback_with_us"
+        android:textColor="@color/homeCategory"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/edt_App_FeddBack"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/drw_round_corner_grey"
+        android:gravity="top"
+        android:inputType="textCapWords"
+        android:maxLength="500"
+        android:padding="5dp"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/btn_submit_app_feedback"
+        style="@style/buttonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:onClick="onClick"
+        android:text="@string/submit" />
+</LinearLayout>

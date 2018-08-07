@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_alert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#c4c4c4" />
+
+        <LinearLayout
+            android:id="@+id/btn_alertOk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:onClick="onClick"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_ok"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/ok"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!--   <Button
+               android:id="@+id/btn_alertOk"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_30sdp"
+               android:layout_marginTop="@dimen/_10sdp"
+               android:background="@drawable/drw_btn_bg"
+               android:onClick="onClick"
+               android:text="@string/str_ok"
+               android:textColor="@android:color/white"
+               android:textSize="@dimen/_15sdp" />-->
+    </LinearLayout>
+
+</RelativeLayout>

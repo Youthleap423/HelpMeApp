@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F2F2F2</color>
+    <color name="colorPrimaryDark">#F2F2F2</color>
+    <color name="colorAccent">#0095d7</color>
+
+    <color name="colorHint">#7c7b7b</color>
+    <color name="colorTitle">#020202</color>
+    <color name="colorOfferDetail">#F1F1F1</color>
+    <color name="colorViolet">#844cd1</color>
+
+
+    <color name="homeCategory">#060606</color>
+    <color name="blue">#8000ff</color>
+    <color name="label">#7c7b7b</color>
+    <color name="colorTextGray">#808080</color>
+    <color name="Black">#283033</color>
+    <color name="NaviBack">#2A3336</color>
+    <color name="white">#FFFFFF</color>
+    <color name="pink">#E47CA8</color>
+    <color name="colorTransprentWhite">#50FFFFFF</color>
+    <color name="colorDialogTitle">#bcbcbc</color>
+</resources>

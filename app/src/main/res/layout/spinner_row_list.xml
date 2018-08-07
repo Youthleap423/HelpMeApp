@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/spinnerItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        android:gravity="start|center"
+        android:maxLines="2"
+        android:padding="5dp"
+        android:paddingLeft="2dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp" />
+</LinearLayout>

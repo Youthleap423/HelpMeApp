@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_backToMenu"
+        android:title="@string/str_back_to_menu" />
+    <item
+        android:id="@+id/menu_makeNewHelp"
+        android:title="@string/str_make_new_help" />
+    <item
+        android:id="@+id/menu_cancelTheHelp"
+        android:title="@string/str_cancel_help" />
+</menu>

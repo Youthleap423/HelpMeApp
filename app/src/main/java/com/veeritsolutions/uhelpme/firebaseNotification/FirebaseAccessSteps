@@ -1,0 +1,276 @@
+
+Before use firebaseIDService.java and MyFirebaseMessagingService.java you need to follow below steps
+
+1. Update sdk google play service in android studio
+
+   1.1) Refer below link how to update google play service in android studio
+        @Note : follow (Prerequisites) point
+        @link : https://firebase.google.com/docs/notifications/android/console-audience
+
+2. Generate SHA-1 key
+   @Note: prefer signed apk to generate SHA-1 key
+
+   There are two ways to generate SHA-1 key
+
+   2.1) Get SHA-1 using command prompt
+        @Note: prefer signed apk to generate SHA-1 key and make sure your system has installed openssl
+               Yet not installed than refer below link to download it
+               @link : https://sourceforge.net/projects/openssl/
+
+        2.1.1) Get debug SHA-1 key
+               refer below link to generate SHA-1 key
+               @link : https://developers.google.com/android/guides/client-auth
+                                     OR
+               run cmd and paste below line
+               keytool -list -v -keystore "%USERPROFILE%\.android\debug.keystore" -alias androiddebugkey -storepass android -keypass android
+
+        2.1.2) Get release or signed apk SHA-1 key
+
+               run cmd and paste below line
+               keytool -list -v -keystore "D:\CodeBase Documentation\codebase.jks" -alias codebase
+
+               where
+               .jks file path - "D:\CodeBase Documentation\codebase.jks"  e.g. codebase.jks is file name
+               alias name - codebase e.g. -alias codebase
+
+   2.2) Get SHA-1 key from android studio
+        refer below link
+        @link : http://stackoverflow.com/questions/27609442/how-to-get-the-sha-1-fingerprint-certificate-in-android-studio-for-debug-mode
+                                        OR
+               Open Android Studio
+               Open your Project
+               Click on Gradle (From Right Side Panel, you will see Gradle Bar)
+               Click on Refresh (Click on Refresh from Gradle Bar, you will see List Gradle scripts of your Project)
+               Click on Your Project (Your Project Name form List (root))
+               Click on Tasks
+               Click on Android
+               Double Click on signingReport (You will get SHA1 and MD5 in Run Bar)
+
+   2.3) Save generated SHA-1 key in notepad file or in your resource for future use
+
+3. Create project Or Import project
+   @Note : for firebase console use same gmail id that you have created project
+
+   3.1) To create project refer below link
+        select option - Create New Project
+        @link : https://console.firebase.google.com/
+
+        3.1.1) add firebase to your android app
+               @link : https://console.firebase.google.com/project/fir-demo-fc03c/overview
+               add package name,SHA-1 key and other required information
+
+        3.1.2) add required information like package name,SHA-1 key and other required information
+
+        3.1.3) Go to step 3.2
+                                    OR
+   3.1) Import existing project
+        if user has already created project for google integration or any other purpose than user will
+        import that project in firebase console
+
+        select option - "Import Existing project"
+        @link : https://console.firebase.google.com/
+
+        3.1.1) Go to step 3.2
+
+   3.2) Add required information like package name, SHA-1 key and other required information
+
+        3.3.1) Select "Go to console"
+        3.3.2) Select your project
+        3.3.3) Select "Project setting" option from left panel where your project name mentioned
+                 with setting button icon
+        3.3.4) Select "add app" and fill required information like package name, SHA-1 key and
+                 other required information
+
+   3.3) Add configuration json file to your project
+
+        Refer below link to get a configuration file
+        @Note : follow (Add Firebase to your app) point
+        @link : https://firebase.google.com/docs/notifications/android/console-audience
+
+4. Add the Google Services plugin
+
+   4.1) Add the dependency to your project-level build.gradle:
+        dependencies {
+                // ...
+                classpath 'com.google.gms:google-services:3.0.0'
+            }
+        till 1-2-2016 latest version is 3.0.0.
+
+   4.2) Add the plugin to your app-level build.gradle:
+        apply plugin: 'com.google.gms.google-services'
+
+5. Import latest firebase gradle file in app level build.gradle
+   @link : https://firebase.google.com/docs/android/setup#available_libraries
+
+    In your app-level build.gradle file, declare Google Play Services as a dependency:
+
+    apply plugin: 'com.android.application'
+
+    android {
+      // ...
+    }
+
+    dependencies {
+      // ...
+      compile 'com.google.firebase:firebase-core:10.0.1'
+      compile 'com.google.firebase:firebase-messaging:10.0.1'
+
+      // Getting a "Could not find" error? Make sure you have
+      // the latest Google Repository in the Android SDK manager
+    }
+    till 1-2-2017 latest version is 10.0.1.
+
+    // ADD THIS AT THE BOTTOM
+    apply plugin: 'com.google.gms.google-services'
+
+6. Now developer or user ready to access firebaseIDService.java and MyFirebaseMessagingService.java
+
+7. Import "firebaseNotification" package in your project
+
+   7.1) Define FirebaseIDService class in your app manifest
+        To use FirebaseIDService you need to add the following in your app manifest
+
+        <service android:name=".firebaseNotification.FirebaseIDService">
+             <intent-filter>
+                    <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+             </intent-filter>
+        </service>
+
+   7.2) Define MyFirebaseMessagingService class in your app manifest
+        To use FirebaseMessagingService you need to add the following in your app manifest
+
+        <service android:name=".firebaseNotification.MyFirebaseMessagingService">
+             <intent-filter>
+                    <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+             </intent-filter>
+        </service>
+
+8. Access Firebase device token
+
+   8.1) Use FirebaseIDService.java class to access device token
+        use "sendRegistrationToServer(String token)" method to get device token
+        and save it to your resource for future use like you can save in shared preference
+
+   8.2) Save firebase device token in shared preference
+
+        copy below code in sendRegistrationToServer(String token) method
+        where
+        token - firebase Device token
+
+        PrefHelper.getInstance().setString(PrefHelper.KEY_DEVICE_TOKEN, token);
+
+9. Use FirebaseMessagingService or GcmListenerService to manage the notification flow
+
+   9.1) How to use MyFirebaseMessagingService
+        refer step 7.2
+
+        9.1.1) Manage notification flow
+
+   9.1) How to use GcmListenerService
+        Import latest gcm gradle file in app level build.gradle
+          @link : https://firebase.google.com/docs/android/setup#available_libraries
+
+        In your app-level build.gradle file, declare Google Play Services as a dependency:
+
+            apply plugin: 'com.android.application'
+
+            android {
+              // ...
+            }
+
+            dependencies {
+              // ...
+              compile 'com.google.android.gms:play-services-auth:10.0.1'
+
+              // Getting a "Could not find" error? Make sure you have
+              // the latest Google Repository in the Android SDK manager
+            }
+            till 1-2-2016 latest version is 10.0.1.
+
+            // ADD THIS AT THE BOTTOM
+            apply plugin: 'com.google.gms.google-services'
+
+   9.2) Import PushNotificationService.java class in your project
+
+        9.2.1) Define PushNotificationService in your app manifest
+               refer below link for more information
+               @link : https://developers.google.com/android/reference/com/google/android/gms/gcm/GcmListenerService
+
+               <service
+                   android:name=".PushNotificationService"
+                   android:exported="false">
+                 <intent-filter>
+                    <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                 </intent-filter>
+               </service>
+
+               <receiver
+                    android:name="com.google.android.gms.gcm.GcmReceiver"
+                    android:exported="true"
+                    android:permission="com.google.android.c2dm.permission.SEND">
+                  <intent-filter>
+                       <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                       <category android:name="com.example.mvc.codebase" />
+                  </intent-filter>
+               </receiver>
+
+        9.2.2) Manage notification flow
+
+--------------------------------------- Extra Note: -----------------------------------------------
+
+10. Send Notification to device using firebase Console
+
+   10.1) Open firebase console with same gmail credentials that you have created or import project
+        refer below link
+        @link : https://firebase.google.com/docs/notifications/
+
+        10.1.1) Select "Go to console"
+        10.1.2) Select your project
+        10.1.3) Select "Notification" option from left menu
+        10.1.4) Select "New Message" and fill required details like Message text, Message label and etc.
+        10.1.5) Select any one option from Target
+               e.g. "select Single device"
+        10.1.6) Enter "registration token" that would be generated
+               e.g. fm2J5pttbMw:APA91bFYHeAo4IWxApzkPewFmNGwtTePOe5gWqJcR28iA-tM5yNTj0vp5HKMC_OYEQEm_-Ndm8ACeZWK6CUh64n3ugFCF5ngcC-DlveqrQLg_p5i1a_JWL3BRToOEaDvLmEWbN2ReOuv
+        10.1.7) Select "app"
+               your project package name
+               e.g. com.example.mvc.codebase
+        10.1.8) Select "send message"
+
+   10.2) Manage notification click action
+        @Note: using firebase notification console you can manage notification when application is
+               in foreground state
+               refer below link for more details
+               @link : https://firebase.google.com/docs/notifications/android/console-audience
+               read point - "Receive and handle notifications"
+
+               10.2.1) Notifications delivered when your app is in the background.
+                      In this case, the notification is delivered to the device’s system tray.
+                      A user tap on a notification opens the app launcher by default.
+               10.2.2) Messages with both notification and data payload, both background and foreground
+                      In this case, the notification is delivered to the device’s system tray, and
+                      the data payload is delivered in the extras of the intent of your launcher Activity.
+
+11. Send notification using gcm listener service
+
+    11.1) Refer step 9.1 (How to use GcmListenerService) to setup GcmListenerService in your project
+
+    11.2) get Api key from firebase console
+
+          11.2.1) Open firebase console with same gmail credentials that you have created or import project
+                  refer below link
+                  @link : https://firebase.google.com/docs/notifications/
+
+          11.2.2) Select "Go to console"
+          11.2.3) Select your project
+          11.2.4) Select "Project setting" option from left panel where your project name mentioned
+                  with setting button icon
+          11.2.5) Select "CLOUD MESSAGING" where Server key and Legacy server key mentioned.
+          11.2.6) Copy it in your resource
+
+    11.3) Open below link in your browser to send notification or you can also use any other resource
+          @link : http://apns-gcm.bryantan.info/
+
+    11.4) Enter device token,message and api key in GCM
+
+    11.5) Send notification

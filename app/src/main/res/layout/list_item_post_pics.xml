@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rel_picView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/img_helpPhoto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:onClick="onClick"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/img_helpPicDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/img_helpPhoto"
+            android:layout_alignRight="@+id/img_helpPhoto"
+            android:background="@android:color/white"
+            android:onClick="onClick"
+            android:src="@drawable/drw_close_black_24dp"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/prg_petPicLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

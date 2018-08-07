@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UHelpMe</string>
+    <string name="str_no">Non</string>
+    <string name="str_yes">Oui</string>
+    <string name="str_please_wait">S\'il vous plaît, attendez…</string>
+    <string name="str_no_internet_connection_available">Pas de connexion Internet disponible</string>
+    <string name="title_activity_sign_up">S\'inscrire</string>
+    <string name="str_create_account">Créer un compte</string>
+    <string name="termsConditions">En créant votre compte, vous acceptez le <b> conditions générales</b> de <b>UHelpMe</b></string>
+    <string name="more_details">Plus de détails</string>
+    <string name="decline">Déclin</string>
+    <string name="str_email">Email</string>
+    <string name="str_password">Mot de passe</string>
+    <string name="str_login">s\'identifier</string>
+    <string name="str_forget_pwd">Mot de passe oublié?</string>
+    <string name="str_or">OU</string>
+    <string name="str_view_all_offers">Voir toutes les offres</string>
+    <string name="str_login_failed">Échec de la connexion</string>
+
+    <!--    <string name="str_hint_frist_name">Prénom</string>-->
+    <!-- <string name="str_hint_last_name">Nom de famille</string>-->
+    <!--    <string name="str_hint_email">Email</string>-->
+    <string name="str_general_condition">condition</string>
+    <string name="str_header">Créer un compte</string>
+    <string name="str_condition">En créant votre compte. Vous acceptez</string>
+    <string name="str_condition1">la</string>
+    <string name="str_back">Arrière</string>
+
+    <string name="str_review_ratting">Review And Ratting</string>
+    <string name="str_reward">Récompense</string>
+
+
+    <string name="str_setting">Réglage</string>
+    <string name="str_add_feedback">Ajouter FeedBack</string>
+    <string name="str_sign_out">DÉCONNEXION</string>
+
+    <string name="str_help_me">UHelpMe</string>
+
+    <string name="str_view">Voir un U</string>
+    <string name="str_basic_information">Informations de base</string>
+    <string name="str_title">Titre</string>
+    <string name="str_description">La description</string>
+    <string name="next_step">L\'étape suivante</string>
+    <string name="str_take_photo">Prendre une photo (facultatif)</string>
+    <string name="str_location">Emplacement</string>
+    <string name="str_your_location">Ton emplacement</string>
+    <string name="str_category">Catégorie</string>
+    <string name="str_and_finally">Et enfin</string>
+    <string name="str_amount">Montant</string>
+    <string name="str_view_my">Voir mes</string>
+    <string name="title_activity_maps">Carte</string>
+
+
+    <string name="str_my_profile">Mon profil</string>
+    <string name="str_review_rating">Examen et notations</string>
+    <string name="str_rewards">Récompenses</string>
+    <string name="str_packages">Paquets</string>
+    <string name="str_payments">Paiements</string>
+    <string name="str_settings">Paramètres</string>
+    <string name="str_app_feedback">modifier l\'application</string>
+    <string name="str_signout">DÉCONNEXION</string>
+    <string name="str_ratings">Évaluations</string>
+    <string name="str_points">Points</string>
+    <string name="str_HelpMe">HelpMe</string>
+    <string name="str_offered">Offert </string>
+
+    <string name="navigation_drawer_open">Ouvrir le tiroir de navigation</string>
+    <string name="navigation_drawer_close">Fermer le tiroir de navigation</string>
+    <string name="str_personal_info">Informations personnelles</string>
+    <string name="str_profile_info">Informations sur le profil </string>
+
+    <!--  <string-array name="dateEntries">
+          <item>Sélectionnez les limites de temps</item>
+          <item>Aujourd'hui</item>
+          <item>Autres jours</item>
+      </string-array>
+
+
+      <string-array name="gender">
+          <item>Sélectionnez le sexe</item>
+          <item>Mâle</item>
+          <item>Femelle</item>
+      </string-array>
+  -->
+    <!--    <string name="Time_Remaning">Temps restant:</string>-->
+    <string name="My_Offer">Mon offre</string>
+    <string name="str_select_profile_photo">Sélectionnez une photo</string>
+    <string name="str_camera">Caméra</string>
+    <string name="str_gallery">Galerie</string>
+    <string name="Time_Remaining">Temps restant :</string>
+    <string name="home">Accueil</string>
+    <string name="search">Chercher</string>
+    <string name="dashboard">Tableau de bord</string>
+    <string name="chatroom">Tchat</string>
+    <string name="login_with_facebook">Se connecter avec Facebook</string>
+    <string name="first_name">Prénom</string>
+    <string name="last_name">Nom de famille</string>
+    <!--    <string name="email">Email</string>-->
+    <!--  <string name="password">Mot de passe</string>-->
+    <string name="create_account">Créer un compte</string>
+    <string name="ok">D\'accord</string>
+    <string name="current_offers">Offres actuelles</string>
+    <string name="amount">Montant</string>
+    <string name="date">Rendez-vous amoureux</string>
+    <string name="select_product">Sélectionnez le produit</string>
+    <string name="provide_a_group_subject">Fournir un sujet de groupe</string>
+    <string name="type_group_subject_here">Type de sujet de groupe ici …</string>
+    <string name="enter_your_offer_amount">Entrez le montant de votre offre</string>
+    <string name="offer_amount">Montant de l\'offre</string>
+    <string name="cancel">Annuler</string>
+    <string name="select_packages">Sélectionnez les paquets</string>
+    <string name="select_payment_method">Sélectionnez le mode de paiement</string>
+    <string name="paypal">PayPal</string>
+    <string name="stripe">Carte de crédit</string>
+    <string name="loading">Chargement....</string>
+    <string name="share_your_feedback_with_us">Partagez vos commentaires avec nous</string>
+    <string name="submit">Soumettre</string>
+    <string name="old_password">Ancien mot de passe</string>
+    <string name="new_password">Nouveau mot de passe</string>
+    <string name="re_enter_password">Retaper le mot de passe</string>
+    <string name="search_user_and_group">Recherche utilisateur et groupe</string>
+    <string name="create_new_group">Créer un nouveau groupe</string>
+    <string name="search_user">Rechercher l\'utilisateur</string>
+    <string name="type_here">Écrivez ici…</string>
+    <string name="group_members">Les membres du groupe</string>
+    <string name="category">Catégorie :</string>
+    <string name="best_offer">Meilleure offre</string>
+    <string name="location">Emplacement</string>
+    <string name="category_search">Catégorie Recherche</string>
+    <string name="keyword_search">Recherche par mot clé</string>
+    <string name="help_information">Informations d\'aide</string>
+    <string name="title">Titre</string>
+    <string name="description">La description</string>
+    <string name="category_information">Information sur la catégorie</string>
+    <string name="time_and_amount_information">Informations sur le temps et le montant</string>
+    <string name="select_date">Sélectionnez la date</string>
+    <string name="select_hours">Sélectionnez les heures</string>
+    <string name="update">Mettre à jour</string>
+    <string name="reviews">Avis</string>
+    <string name="current_balance">Solde actuel</string>
+    <string name="view_all_packages">Voir tous les paquetages</string>
+    <string name="active_payment_method">Méthode de paiement active</string>
+    <string name="currently_have_no_any_active_payment_method">Actuellement, aucune méthode de paiement active</string>
+    <string name="add_another_method">Ajouter une autre méthode</string>
+    <string name="telephone">Téléphone</string>
+    <string name="country">Pays</string>
+    <string name="state">Etat</string>
+    <string name="city">Ville</string>
+    <string name="postal_code">code postal</string>
+    <string name="my_profile">Mon profil</string>
+    <string name="reviews_and_ratings">Note et avis</string>
+    <string name="rewards">Récompenses</string>
+    <string name="packages">Paquets</string>
+    <string name="payments">Paiements</string>
+    <string name="settings">Paramètres</string>
+    <string name="app_feedback">app commentaires</string>
+    <string name="sign_out">DÉCONNEXION</string>
+    <string name="points">POINTS</string>
+    <string name="learn_more">Gagne plus</string>
+    <string name="redeem_points">Échanger des points</string>
+    <string name="search_places">Rechercher des lieux</string>
+    <string name="rate_app">Application de taux</string>
+    <string name="share_app_with_friends">Partager l\'application avec des amis</string>
+    <string name="change_password">Changer le mot de passe</string>
+    <string name="about_us">À propos de nous</string>
+    <string name="help_post">AIDE POST</string>
+    <string name="credit_points">POINTS DE CRÉDIT</string>
+    <string name="paypal_payment">Paiement PayPal</string>
+    <string name="help_me">Aidez moi</string>
+    <string name="add_new_member">Ajouter un nouveau membre</string>
+    <string name="correct_distance_data">Vous n\'obtiendrez pas les données de distance correctes</string>
+    <string name="enter_email">Entrer l\'adresse e-mail</string>
+    <string name="enter_valid_email">Entrez une adresse email valide</string>
+    <string name="enter_password">Entrer le mot de passe</string>
+    <string name="general_conditions">En créant votre compte, vous acceptez le</string>
+    <string name="link"><![CDATA[<a color=\"#0095d7\"href=\"http://www.uhelpme.com/termsandconditions.html/\"> termes et conditions</a> of <b>UHelpMe</b>]]></string>
+    <string name="enter_first_name">Entrez votre prénom</string>
+    <string name="enter_last_name">Entrez le nom de famille</string>
+    <string name="admin">(Admin)</string>
+    <string name="valid_hours">Sélectionner les heures valides</string>
+    <string name="type_group_subject">Type sujet de groupe</string>
+    <string name="myhelpme">MyHelpMe</string>
+    <string name="myoffers">MyOffers</string>
+    <string name="my_helpme">Mon aide-mémoire</string>
+    <string name="my_offers">Mes offres</string>
+    <string name="update_your_offer">Mettez à jour votre offre</string>
+    <string name="enter_amount">Entrer le montant</string>
+    <string name="offer_placed">Offre réussie</string>
+    <string name="enter_offer_amount">Entrez le montant de votre offre</string>
+    <string name="select_time_limits">Sélectionnez les limites de temps</string>
+    <string name="today">Aujourd\'hui</string>
+    <string name="other_day">D\'autres jours</string>
+    <string name="updated">actualisé</string>
+    <string name="enter_help_title">Entrez le titre d\'aide</string>
+    <string name="enter_help_description">Entrez la description de l\'aide</string>
+    <string name="select_category">Sélectionnez la catégorie pour publication d\'aide</string>
+    <string name="select_required_hours">Sélectionnez le délai requis pour l\'heure</string>
+    <string name="enter_amount_time_limits">Saisir le montant pour les délais</string>
+    <string name="select_required_date_limit">Sélectionnez la date limite requise</string>
+    <string name="select_hours_time_liimit">Sélectionnez le délai requis pour l\'heure</string>
+    <string name="view_a_u">Voir un U</string>
+    <string name="font_color"><![CDATA[<font color=\"#0095d7\">]]></string>
+    <string name="helpme">Aidez moi</string>
+    <string name="font"><![CDATA[<font>]]></string>
+    <string name="your_location">ton emplacement</string>
+    <string name="thank_you">Je vous remercie</string>
+    <string name="write_your_review">Écrivez vos commentaires</string>
+    <string name="passwrd_changed_successfully">Le mot de passe a été changé avec succès</string>
+    <string name="enter_old_password">Entrez Old PassWord</string>
+    <string name="enter_new_password">Entrez un nouveau mot de passe</string>
+    <string name="enter_re_enter_password">Entrez Re-Enter PassWord</string>
+    <string name="password_not_matched">Le mot de passe et le mot de passe de confirmation ne correspondent pas</string>
+    <string name="old_pass_invalid">Le mot de passe ancien n\'est pas valide</string>
+    <string name="select_gender">Sélectionnez le sexe</string>
+    <string name="male">Mâle</string>
+    <string name="female">Femelle</string>
+    <string name="select_country">Sélectionnez d\'abord le pays</string>
+    <string name="select_state">Sélectionnez l\'état en premier</string>
+    <string name="profile_updated">Profil mis à jour</string>
+    <string name="select_country_title">Sélectionner le pays</string>
+    <string name="select_state_title">Sélectionnez l\'état</string>
+    <string name="select_city_title">Sélectionnez la ville</string>
+    <string name="payment_cancelled">Paiement annulé</string>
+    <string name="invalid_payment">Un paiement invalide! Désolé pour le dérangement</string>
+    <string name="sure_want_to_redeem">Êtes-vous sûr de vouloir échanger les points en achetant ce produit?</string>
+    <string name="you_dont_have_enough_points">Désolé, vous n\'avez pas assez de points pour échanger ce produit</string>
+    <string name="reward_points">Points de récompenses</string>
+    <string name="redeem_history">Échangez l\'historique</string>
+    <string name="invalid_card">Carte invalide</string>
+
+    <string name="select_category_for_help_post">Sélectionnez la catégorie pour publication d\'aide</string>
+    <string name="purchase_credit_points">Achat de points de crédit</string>
+    <string name="are_you_want_to_but_credit_points">Voulez-vous acheter des crédits?</string>
+    <string name="you_dont_have_enough_points_to_post_help">Désolé, vous n\'avez pas assez de points de crédit pour publier de l\'aide pour cette catégorie</string>
+    <string name="accept_post_offer_for_help">Accepter l\'offre</string>
+    <string name="are_you_want_to_accept_offer">Êtes-vous sûr de vouloir accepter l\'offre?</string>
+    <string name="finish_job">Terminer l\'aide Publier</string>
+    <string name="are_you_want_to_finish_help_post">Êtes-vous sûr de vouloir terminer le poste d\'aide?</string>
+    <string name="your_thoughts">Tes pensées</string>
+    <string name="review_and_rating">Examen et évaluation</string>
+    <string name="enter_review">Entrez les critiques</string>
+
+    <string name="map_search">Recherche par carte</string>
+    <string name="ar_view_search">Recherche AR Recherche</string>
+    <string name="language">La langue</string>
+    <string name="does_not_support_this_feature">Votre téléphone ne prend pas en charge cette fonctionnalité</string>
+
+    <string name="advertise_videos">Vidéos publicitaires</string>
+    <string name="are_you_want_to_see_videos">Pour gagner plus de points de récompense, cliquez sur OK pour regarder des vidéos publicitaires, cela ajoutera 5 points de récompense</string>
+
+    <string name="notification">Notifications</string>
+    <string name="str_distance">Je souhaite être informé lorsque l\'utilisateur publie une aide</string>
+    <string name="str_km">À l\'intérieur (Distance) km</string>
+
+    <string name="can_help_post">Vous pouvez maintenant publier le message d\'aide</string>
+    <string name="you_will_rewarded_video_points">Vous serez récompensé Points très bientôt</string>
+    <string name="crash_toast_text">Acra crash</string>
+    <string name="can_not_post_offer">Vous ne pouvez pas poster une offre sur votre propre publication</string>
+
+    <string name="str_error_doing_payment">Erreur lors du paiement</string>
+    <string name="payment_failed_stripe">Le paiement a échoué … essayez de nouveau plus tard</string>
+
+    <string name="restart_application">Recommencer l\'application</string>
+    <string name="for_language_change_restart_application">Nécessité de redémarrer l\'application pour effectuer un changement de langue</string>
+
+    <string name="clear_chat">Conversation claire</string>
+    <string name="delete_chat">Supprimer le chat</string>
+    <string name="leave_group">Quitter le groupe</string>
+    <string name="delete_group">Supprimer le groupe</string>
+    <string name="str_signout_failed" />
+    <string name="str_sigin_failed" />
+    <string name="str_confirm_pass_does_not_matches">Confirmer le mot de passe ne correspond pas</string>
+    <string name="str_enter_confirm_pass">Entrez le mot de passe de confirmation</string>
+    <string name="str_terms_and_condtions">Acceptez les termes et conditions</string>
+    <string name="amount_">montant :</string>
+    <string name="help_seeker">Seeker d\'aide :</string>
+    <string name="str_upload_photos">Télécharger une photo</string>
+    <string name="str_maximun_photos">Maximum de quatre photos autorisées à télécharger</string>
+    <string name="str_select_amount">Sélectionnez taux de montant</string>
+    <string name="str_fixed_rate">Taux fixe</string>
+    <string name="str_now">À présent</string>
+    <string name="groups">Groupes</string>
+    <string name="user">Utilisateurs</string>
+    <string name="str_houly_rate">Taux horaire</string>
+    <string name="str_tap_here_for_group_info">Tapez ici pour l\'information du groupe</string>
+    <string name="action_share">Partager</string>
+    <string name="action_reply">Répondre</string>
+    <string name="str_payment">Payment</string>
+    <string name="this_help_is_on_hourly_base_so_enter_the_number_of_work_s_hours">Cette aide est basée sur une base horaire. Entrez donc le nombre d\'heures de travail</string>
+    <string name="str_enter_valid_work_hours">Entrez les heures de travail valides</string>
+    <string name="enter_card_number">Entrez le numéro de la carte</string>
+    <string name="enter_month">Entrez le mois</string>
+    <string name="enter_year">Entrez une année</string>
+    <string name="enter_card_cvv">Entrer la carte CVV</string>
+    <string name="str_enter_card_number">Entrez le numéro de la carte</string>
+    <string name="valid_card_year">Entrez l\'année de la carte de crédit valide</string>
+    <string name="valid_card_month">Entrez un mois de carte de crédit valide</string>
+    <string name="str_business_tex_id">BusinessTaxId</string>
+    <string name="str_businessTermsAndConditions">Si vous acceptez les termes et conditions, tous les champs sont obligatoires</string>
+    <string name="hours">Hours</string>
+
+    <string name="str_birth_date">Date de naissance (mm / jj / aaaa)</string>
+    <string name="str_address_line1">Adresse 1</string>
+    <string name="str_address_line2">Adresse 2</string>
+    <string name="str_personal_number">Numéro personnel</string>
+    <string name="str_account_number">Numéro de compte bancaire</string>
+    <string name="str_currency">devise</string>
+    <string name="str_Routing_number">Numéro de routage</string>
+    <string name="str_busion_info">Informations d\'affaires</string>
+    <string name="account_conditions">En donnant les informations de votre compte, vous acceptez les </string>
+    <string name="select_payment_type">Sélectionner le type de paiement</string>
+    <string name="str_email_id">id email</string>
+    <string name="str_paypal_id">Id de Paypal</string>
+    <string name="str_stripe_id">Stripe Id</string>
+    <string name="str_select_payment_type">Sélectionner le type de paiement</string>
+    <string name="str_hourly_bases">Cette aide est une base horaire. Montant total :</string>
+    <string name="str_back_to_menu">RETOUR AU MENU PRINCIPAL</string>
+    <string name="str_make_new_help">FAIRE UNE NOUVELLE AIDE</string>
+    <string name="str_cancel_help">ANNULER L\'AIDE</string>
+    <string name="str_choose_action">CHOISIR UNE ACTION</string>
+    <string name="str_yes_capital">OUI</string>
+    <string name="str_no_capital">NO</string>
+    <string name="str_back_to_help_progress">RETOURNER À AIDER EN COURS</string>
+    <string name="str_reason_for_help_cancellation">Raison de l\'annulation de l\'aide</string>
+    <string name="enter_reason">ENTRER RAISON</string>
+    <string name="submit_capital">SOUMETTRE</string>
+    <string name="str_extra_money_payback">Nous vous rembourser le montant d\'argent supplémentaire très prochainement</string>
+    <string name="not_finish">PAS TERMINÉ!</string>
+    <string name="str_we_will_wait">Ok, nous attendrons</string>
+    <string name="str_issue_detail">DÉTAIL ISSUE</string>
+    <string name="str_cancel_capital">ANNULER</string>
+    <string name="str_allow_required_permission">Vous ne pouvez pas télécharger l\'image jusqu\'à ce que vous ne laissez pas les autorisations nécessaires</string>
+    <string name="str_issue_confirm">ENJEU CONFIRMER?</string>
+    <string name="str_free_rate">Free</string>
+    <string name="can_not_put_zero_offer">Can\'t put offer amount zero</string>
+    <string name="str_cancel_help_reason">Enter Reason for Cancel Help</string>
+    <string name="str_can_not_edit_offer">Offer is accepted. So, you can not edit offer</string>
+    <string name="str_can_not_edit_job">Job is accepted, You can not edit Job</string>
+    <string name="str_job_finished">Job is finished</string>
+    <string name="str_job_rejected">Job is rejected</string>
+    <string name="str_job_cancelled">Job is cancelled</string>
+    <string name="str_job_not_accepted">Job is not accepted yet</string>
+    <string name="str_offer_not_accepted">Offer is not accepted yet</string>
+    <string name="str_click_back_again">Please click BACK again to exit</string>
+
+</resources>

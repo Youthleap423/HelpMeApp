@@ -1,0 +1,94 @@
+{
+  "project_info": {
+    "project_number": "914815999658",
+    "firebase_url": "https://uhelpme-d3912.firebaseio.com",
+    "project_id": "uhelpme-d3912",
+    "storage_bucket": "uhelpme-d3912.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:914815999658:android:6e0f40b6a8b004c0",
+        "android_client_info": {
+          "package_name": "com.veeritsolutions.uhelpme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "914815999658-tg6mms6d559ooevu9umv7dle6ol1sl1m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.veeritsolutions.uhelpme",
+            "certificate_hash": "914cabd65d114ead2b104c6aaf209e13a9ed0371"
+          }
+        },
+        {
+          "client_id": "914815999658-hh4o0fhc1hbpiqc56dk2pmkc1nter1rn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.veeritsolutions.uhelpme",
+            "certificate_hash": "4daa0cc2ef209c72a493f5f811a9592fc16dae14"
+          }
+        },
+        {
+          "client_id": "914815999658-2mddtb2i4uip3uf6a2g9s7aus2m9ak8v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.veeritsolutions.uhelpme",
+            "certificate_hash": "033d77188dcb99fdca0fbc82652b306eeed06ad9"
+          }
+        },
+        {
+          "client_id": "914815999658-nbvoil79cfg53c6gv22p0eapkrd0anrk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.veeritsolutions.uhelpme",
+            "certificate_hash": "158335125cf65f5afce9a769d8073ff47f5778a0"
+          }
+        },
+        {
+          "client_id": "914815999658-h6uk5gsncv4mvieobbi53ojk7m22m5cr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.veeritsolutions.uhelpme",
+            "certificate_hash": "348845111dba3916bbb3d2891d91b4c738c3236e"
+          }
+        },
+        {
+          "client_id": "914815999658-v82bpmktlt9bvlvkgfkbihvsutt5cr85.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjeCmqpnCS2m1oaAst24IQRvky4hAu1kQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "914815999658-v82bpmktlt9bvlvkgfkbihvsutt5cr85.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "914815999658-ea86sj6f5q3us8ggshdgittk371cbut1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.uHelpMe"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

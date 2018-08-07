@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lin_categoryList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/view_strip"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/drw_dash_sideview" />
+
+        <RelativeLayout
+            android:id="@+id/rel_categoryList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/img_HeaderProfilePhoto"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="top"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp" />
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:id="@+id/lin_helpDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/lin_helpIcons"
+                android:layout_toRightOf="@+id/img_HeaderProfilePhoto"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txv_offer_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/Black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txv_offer_title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="4"
+                    android:textColor="@color/colorTextGray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/lin_helpIcons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_InfoIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClick"
+                    android:padding="2dp"
+                    android:src="@drawable/img_info_icon" />
+
+                <!-- <ImageView
+                     android:id="@+id/img_ShareIicon"
+                     android:layout_width="wrap_content"
+                     android:layout_height="0dp"
+                     android:layout_marginTop="5dp"
+                     android:layout_weight="1"
+                     android:src="@drawable/img_share_icon" />-->
+
+                <ImageView
+                    android:id="@+id/img_EditIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClick"
+                    android:padding="2dp"
+                    android:src="@drawable/img_edit_icon" />
+
+                <ImageView
+                    android:id="@+id/img_OfferIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClick"
+                    android:padding="2dp"
+                    android:src="@drawable/img_offer" />
+
+                <ImageView
+                    android:id="@+id/img_ChatIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClick"
+                    android:padding="2dp"
+                    android:src="@drawable/img_chat_icon" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
